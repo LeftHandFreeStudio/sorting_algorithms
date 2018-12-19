@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+import heapsort.Heapsort;
 import mergesort.MergeSort;
 import quicksort.Quicksort;
 /**
@@ -20,6 +21,12 @@ public class Start {
     mergeSort.mergeSort(arrayToMergesort, 0, arrayToMergesort.length - 1);
     System.out.println("Mergesort result:");
     System.out.println(Arrays.toString(arrayToMergesort));
+    
+    int[] arrayToHeapsort = {9,8,7,6,5,4,3,2,1};
+    Heapsort heapsort = new Heapsort();
+    heapsort.heapsort(arrayToHeapsort);
+    System.out.println("Heapsort result:");
+    System.out.println(Arrays.toString(arrayToHeapsort));
   }
 
 }
